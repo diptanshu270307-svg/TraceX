@@ -1,0 +1,54 @@
+version: "3.8"
+
+services:
+  # ============================================================================
+  # TraceX Cyber-Forensics Application (Pure AWS S3 Storage)
+  # ============================================================================
+  tracex:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: tracex-threat-defense
+    ports:
+      - "8000:8000"
+    environment:
+      # AWS S3 Authentication & Configuration (Sole Storage Engine)
+      - AWS_REGION=${AWS_REGION:-ap-south-1}
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID:-}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY:-}
+      - AWS_SESSION_TOKEN=${AWS_SESSION_TOKEN:-}
+      - AWS_ENDPOINT_URL=${AWS_ENDPOINT_URL:-}
+      
+      # S3 Dedicated Buckets
+      - S3_RAW_EML_BUCKET=${S3_RAW_EML_BUCKET:-tracex-raw-eml}
+      - S3_RENDERS_PNG_BUCKET=${S3_RENDERS_PNG_BUCKET:-tracex-renders-png}
+      - S3_EVIDENCE_BUCKET=${S3_EVIDENCE_BUCKET:-tracex-evidence-ledger}
+      - S3_CERTIFICATES_BUCKET=${S3_CERTIFICATES_BUCKET:-tracex-certificates-65b}
+
+      # Section 65B Legal Attestation Settings
+      - CERTIFIER_NAME=${CERTIFIER_NAME:-Security Analyst / TraceX Custodian}
+      - CERTIFIER_TITLE=${CERTIFIER_TITLE:-Lead Cyber-Forensic Investigator & Systems Custodian}
+      - ORGANIZATION=${ORGANIZATION:-TraceX Cyber Threat Defense Command}
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/api/scans"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
+
+  # ============================================================================
+  # Optional Local S3 Emulator (Run with: docker compose --profile local-s3 up)
+  # Emulates AWS S3 for complete offline/isolated cloud testing without AWS billing
+  # ============================================================================
+  localstack-s3:
+    image: localstack/localstack:latest
+    container_name: tracex-localstack-s3
+    profiles:
+      - local-s3
+    ports:
+      - "4566:4566"
+    environment:
+      - SERVICES=s3
+      - DEFAULT_REGION=ap-south-1
+    restart: unless-stopped

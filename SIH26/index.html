@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TraceX — Email Forensics Command Center</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="app-shell">
+
+    <aside class="sidebar" id="sidebar">
+
+      <div class="brand">
+        <div class="brand-mark"><img src="4169c482-1585-4317-b3e9-d7f0111f34fe.png" alt="" class="logoimg"></div>
+
+        <div>
+          <strong>TraceX</strong>
+          <span>Email Threat Intelligence</span>
+        </div>
+      </div>
+
+      <nav id="nav">
+
+        <div class="nav-label">COMMAND CENTER</div>
+
+        <a href="#dashboard" data-route="dashboard">
+          <span>⌂</span> Overview
+        </a>
+
+        <a href="#email-analysis" data-route="email-analysis">
+          <span>✉</span> Email Analysis
+        </a>
+
+        <a href="#investigations" data-route="investigations">
+          <span>◎</span> Investigations
+        </a>
+
+        <a href="#threat-intelligence" data-route="threat-intelligence">
+          <span>◈</span> Threat Intelligence
+        </a>
+
+        <a href="#geolocation" data-route="geolocation">
+          <span>⌖</span> GeoLocation
+        </a>
+
+        <a href="#infrastructure" data-route="infrastructure">
+          <span>⌁</span> Infrastructure Graph
+        </a>
+
+        <a href="#forensic-reports" data-route="forensic-reports">
+          <span>▤</span> Forensic Reports
+        </a>
+
+        <a href="#evidence" data-route="evidence">
+          <span>⬡</span> Evidence
+        </a>
+
+        <a href="#alerts" data-route="alerts">
+          <span>⚠</span> Alerts
+          <b class="nav-badge">6</b>
+        </a>
+
+        <a href="#settings" data-route="settings">
+          <span>⚙</span> Settings
+        </a>
+
+        <a href="#logout" id="navLogoutBtn" data-route="logout" title="Log out of TraceX Command Center" style="color:#FF4B4B; font-weight:700; margin-top:14px; background:rgba(255,75,75,0.08); border:1px solid rgba(255,75,75,0.25); border-radius:6px; display:flex; align-items:center; gap:10px;">
+          <span>🚪</span> Logout
+        </a>
+
+      </nav>
+
+      <div class="sidebar-bottom">
+
+        <div class="system-card">
+          <small>SYSTEM STATUS</small>
+
+          <div>
+            <i class="dot green"></i>
+            ALL SYSTEMS OPERATIONAL
+          </div>
+        </div>
+
+        <div class="analyst" style="display:flex; justify-content:space-between; align-items:center;">
+          <div style="display:flex; align-items:center; gap:8px;">
+            <div class="avatar" id="analystAvatar">SA</div>
+            <div>
+              <strong id="analystName">Security Analyst</strong>
+              <span id="analystRole">Analyst</span>
+            </div>
+          </div>
+          <button id="sidebarLogoutBtn" class="logout-direct-btn" title="Logout of TraceX Command Center" style="color:#FF4B4B; font-size:11px; font-weight:700; padding:5px 10px; border:1px solid rgba(255,75,75,0.35); border-radius:6px; background:rgba(255,75,75,0.12); transition:all 0.2s; cursor:pointer; display:inline-flex; align-items:center; gap:4px;"><span>🚪</span> Logout</button>
+        </div>
+
+      </div>
+
+    </aside>
+
+
+    <main class="main">
+
+      <header class="topbar">
+
+        <button class="icon-btn mobile-only" id="menuBtn">
+          ☰
+        </button>
+
+        <div class="crumb">
+          <span>TraceX</span>
+          <b>/</b>
+          <strong id="pageCrumb">OVERVIEW</strong>
+        </div>
+
+        <div class="top-actions">
+
+          <a href="/api/extension/download" class="btn primary" id="downloadExtBtn" title="Download & Install TraceX Sentinel Chrome Extension from AWS" style="display:inline-flex;align-items:center;gap:6px;text-decoration:none;font-size:11px;font-weight:700;padding:6px 14px;border-radius:6px;background:linear-gradient(135deg,#00E5FF,#0070F3);color:#000;box-shadow:0 0 12px rgba(0,229,255,0.35);transition:transform 0.2s;">
+            <span>⚡</span> Install Extension
+          </a>
+
+          <!-- Dark/Light Mode Toggle placed to the left of the search bar -->
+          <button class="icon-btn" id="themeToggle" title="Toggle dark/light mode">
+            🌙
+          </button>
+
+          <label class="search">
+            <span>⌕</span>
+
+            <input
+              id="globalSearch"
+              placeholder="Search investigations, IPs, domains..."
+            >
+          </label>
+
+          <div class="profile-menu-wrapper">
+            <button class="top-avatar-btn" id="userMenuBtn" aria-label="Account menu" title="Account Menu & Profile">
+              SA
+            </button>
+            <div class="profile-dropdown" id="userDropdown">
+              <!-- Staff Header -->
+              <div class="dropdown-header">
+                <div class="avatar-lg" id="dropdownAvatar">SA</div>
+                <div class="dropdown-user-info">
+                  <strong id="dropdownUserName">Security Analyst</strong>
+                  <span id="dropdownUserEmail">analyst@tracex.defense</span>
+                </div>
+              </div>
+              <div class="dropdown-divider"></div>
+              <!-- Staff Profile -->
+              <a href="#settings" class="dropdown-item">
+                <span>👤</span> Staff Profile
+              </a>
+              <!-- System Settings -->
+              <a href="#settings" class="dropdown-item">
+                <span>⚙️</span> System Settings
+              </a>
+              <!-- Switch Account -->
+              <a href="/login" class="dropdown-item" id="switchAccountLink">
+                <span>🔄</span> Switch Account
+              </a>
+              <div class="dropdown-divider"></div>
+              <!-- Log Out -->
+              <button class="dropdown-item logout-item" id="logoutBtn">
+                <span>🚪</span> Log Out
+              </button>
+            </div>
+          </div>
+
+          <!-- Standalone Direct Logout Button in Topbar -->
+          <button class="btn logout-direct-btn" id="topLogoutBtn" title="Logout of TraceX Command Center" style="display:inline-flex;align-items:center;gap:6px;text-decoration:none;font-size:11px;font-weight:700;padding:6px 14px;border-radius:6px;background:rgba(255,75,75,0.12);color:#FF4B4B;border:1px solid rgba(255,75,75,0.35);box-shadow:0 0 10px rgba(255,75,75,0.15);cursor:pointer;transition:all 0.2s;">
+            <span>🚪</span> Logout
+          </button>
+
+        </div>
+
+      </header>
+
+      <section id="view"></section>
+
+    </main>
+
+  </div>
+
+
+  <div id="modalRoot"></div>
+
+  <div id="toastRoot"></div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+
+  <script src="graph_connector.js"></script>
+  <script src="graph_render.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>

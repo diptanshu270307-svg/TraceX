@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: tracex-threat-defense
+    runtime: python
+    plan: free
+    buildCommand: pip install --upgrade pip && pip install -r requirements.txt
+    startCommand: uvicorn gateway.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: PYTHONPATH
+        value: ".:gateway:api_export:SIH26"
+      - key: AWS_REGION
+        value: ap-south-1
+      - key: CERTIFIER_NAME
+        value: Security Analyst / TraceX Custodian
+      - key: CERTIFIER_TITLE
+        value: Lead Cyber-Forensic Investigator & Systems Custodian
+      - key: ORGANIZATION
+        value: TraceX Cyber Threat Defense Command

@@ -1,0 +1,32 @@
+# TraceX ML Engine: Donut + XGBoost Multimodal Pipeline
+# Replacing Tesseract OCR + BERT NLP
+
+# Core scientific computing
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+scipy>=1.10.0
+
+# Gradient Boosting
+xgboost>=2.0.0
+joblib>=1.3.0
+
+# Image & Vision Processing
+pillow>=10.0.0
+
+# Deep Learning / Transformers (Donut Vision-Language Transformer)
+torch>=2.0.0
+torchvision>=0.15.0
+transformers>=4.34.0
+datasets>=2.14.0
+accelerate>=0.23.0
+sentencepiece>=0.1.99
+
+# Cloud Storage & AWS SDK
+boto3>=1.34.0
+
+# In-Memory Cache & Pub/Sub
+redis>=5.0.0
+
+# Utilities
+python-dateutil>=2.8.2

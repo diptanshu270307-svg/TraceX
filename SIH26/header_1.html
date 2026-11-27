@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SentinelMail — Access Portal</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="loginform.css">
+</head>
+
+<body>
+
+  <div class="container" id="container">
+
+    <!-- ==========================================
+         LOGIN FORM
+         ========================================== -->
+    <div class="form-box-1" id="login-form">
+      <form id="loginForm" onsubmit="handleLogin(event)">
+        <h1>Login</h1>
+        <p class="form-subtext">Access your cybersecurity forensic workspace</p>
+
+        <!-- Username Input -->
+        <div class="input-box-1">
+          <input 
+            type="text" 
+            name="username" 
+            id="username-login" 
+            placeholder="Username or Analyst ID" 
+            autocomplete="username" 
+            required
+          >
+          <i class="fa fa-user" aria-hidden="true"></i>
+        </div>
+
+        <!-- Password Input -->
+        <div class="input-box-1">
+          <input 
+            type="password" 
+            name="password" 
+            id="password-login" 
+            placeholder="Password" 
+            autocomplete="current-password" 
+            required
+          >
+          <i class="fa fa-lock" aria-hidden="true"></i>
+        </div>
+
+        <!-- Forgot Password -->
+        <div class="forgot-link-1">
+          <a href="#" onclick="alert('Password reset link sent to registered email.')">Forgot Password?</a>
+        </div>
+
+        <!-- Login Button -->
+        <button type="submit" class="btn-1">
+          Login
+        </button>
+
+        <p>Or Login With Security Key</p>
+
+        <!-- Social / SSO Icons -->
+        <div class="social-icon-1">
+          <a href="#" title="Google SSO"><i class="fa fa-google" aria-hidden="true"></i></a>
+          <a href="#" title="GitHub SSO"><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a href="#" title="LinkedIn SSO"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          <a href="#" title="Enterprise SSO"><i class="fa fa-shield" aria-hidden="true"></i></a>
+        </div>
+      </form>
+    </div>
+
+
+    <!-- ==========================================
+         REGISTER FORM
+         ========================================== -->
+    <div class="form-box-2 register" id="register-form">
+      <form id="registerForm" onsubmit="handleRegister(event)">
+        <h1>Register</h1>
+        <p class="form-subtext">Create an analyst forensic credentials</p>
+
+        <!-- Username Input -->
+        <div class="input-box-1">
+          <input 
+            type="text" 
+            name="username" 
+            id="username" 
+            placeholder="Analyst Username" 
+            autocomplete="username" 
+            required
+          >
+          <i class="fa fa-user" aria-hidden="true"></i>
+        </div>
+
+        <!-- Email Input -->
+        <div class="input-box-1">
+          <input 
+            type="email" 
+            name="email" 
+            id="email" 
+            placeholder="Official Email Address" 
+            autocomplete="email" 
+            required
+          >
+          <i class="fa fa-envelope" aria-hidden="true"></i>
+        </div>
+
+        <!-- Password Input -->
+        <div class="input-box-1">
+          <input 
+            type="password" 
+            name="password" 
+            id="password1" 
+            placeholder="Create Password" 
+            autocomplete="new-password" 
+            required
+          >
+          <i class="fa fa-lock" aria-hidden="true"></i>
+        </div>
+
+        <!-- Register Button -->
+        <button type="submit" class="btn-1">
+          Create Account
+        </button>
+
+        <p>Or Register With Enterprise Identity</p>
+
+        <!-- Social / SSO Icons -->
+        <div class="social-icon-1">
+          <a href="#" title="Google SSO"><i class="fa fa-google" aria-hidden="true"></i></a>
+          <a href="#" title="GitHub SSO"><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a href="#" title="LinkedIn SSO"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          <a href="#" title="Enterprise SSO"><i class="fa fa-shield" aria-hidden="true"></i></a>
+        </div>
+      </form>
+    </div>
+
+
+    <!-- ==========================================
+         SLIDING TOGGLE OVERLAY
+         ========================================== -->
+    <div class="toggle-box-1">
+
+      <!-- Left Panel (Shown on Login state) -->
+      <div class="toggle-panel-1 toggle-left-1">
+        <h1>Hello, Welcome!</h1>
+        <p>Don't have an analyst account yet?</p>
+        <button type="button" class="btn-1 register-btn-1" id="registerBtn">
+          Register
+        </button>
+      </div>
+
+      <!-- Right Panel (Shown on Register state) -->
+      <div class="toggle-panel-1 toggle-right-1">
+        <h1>Welcome Back!</h1>
+        <p>Already registered with SentinelMail?</p>
+        <button type="button" class="btn-1 login-btn-1" id="loginBtn">
+          Login
+        </button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- JavaScript -->
+  <script src="loginform.js"></script>
+</body>
+</html>

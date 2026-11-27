@@ -1,0 +1,11 @@
+{
+  "include": [
+    ".",
+    "gateway",
+    "api_export"
+  ],
+  "extraPaths": [
+    "./api_export",
+    "./gateway"
+  ]
+}

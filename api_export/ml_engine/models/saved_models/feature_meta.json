@@ -1,0 +1,41 @@
+{
+  "feature_names": [
+    "spf_pass",
+    "dkim_pass",
+    "dmarc_pass",
+    "domain_levenshtein",
+    "domain_entropy",
+    "has_punycode",
+    "relay_hops",
+    "display_name_spoof",
+    "subject_urgency",
+    "reply_to_mismatch",
+    "suspicious_tld",
+    "subdomain_depth",
+    "visual_phish_prob",
+    "visual_urgency_cue",
+    "has_credential_box",
+    "logo_prominence_score",
+    "layout_anomaly_score",
+    "color_contrast_ratio"
+  ],
+  "class_mapping": {
+    "0": "BEC",
+    "1": "IMPERSONATION",
+    "2": "LEGITIMATE",
+    "3": "PHISHING"
+  },
+  "top_features": {
+    "domain_levenshtein": 0.32512969363079874,
+    "relay_hops": 0.23868458435751927,
+    "subject_urgency": 0.2084965973176917,
+    "domain_entropy": 0.09288717130010339,
+    "suspicious_tld": 0.08297077065203898,
+    "dmarc_pass": 0.035769314538199384,
+    "dkim_pass": 0.016055510313943252,
+    "spf_pass": 5.932889974226457e-06,
+    "reply_to_mismatch": 4.2499973101573516e-07,
+    "layout_anomaly_score": 0.0
+  },
+  "accuracy": 1.0
+}

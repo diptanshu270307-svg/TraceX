@@ -1,0 +1,52 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environments
+venv/
+.venv/
+ENV/
+env/
+
+# Environment Variables & Secrets (NEVER commit)
+.env
+.env.local
+.env.*.local
+
+# macOS & IDE System Files
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs, Testing & Databases
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+*.sqlite3
+
+# Runtime Forensic Vault Cache & Personal Raw Emails (contains presigned URLs / runtime artifacts)
+gateway/data/s3_vault/
+gateway/data/renders/
+*.eml
+!api_export/ml_engine/data/test_urgent_phish.eml
+
+# Legacy handoff bundle (contains nested local virtualenv)
+tracex_handoff/
+
+# HuggingFace model cache
+.cache/
+**/.cache/huggingface/
+
+# Keep trained lightweight XGBoost models
+*.pkl
+*.pickle
+*.joblib
+!api_export/ml_engine/models/saved_models/*.joblib

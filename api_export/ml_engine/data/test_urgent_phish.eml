@@ -1,0 +1,35 @@
+From: "SBI Corporate Alerts" <security-alerts@sbi-corp-demo.test>
+To: finance-team@organization.internal
+Subject: Urgent: Corporate Banking Re-Verification Required Immediately
+Date: Mon, 07 Sep 2026 21:40:00 +0530
+Reply-To: credential-harvester@disposable-vault.xyz
+Message-ID: <99182312-test-eml@sbi-corp-demo.test>
+Received: from mail-gateway.external-relay.xyz (mail-gateway.external-relay.xyz [198.51.100.22])
+    by mx.organization.internal with ESMTP id 881239182;
+    Mon, 07 Sep 2026 21:40:02 +0530
+Received: from malicious-vps.attacker.top (malicious-vps.attacker.top [203.0.113.88])
+    by mail-gateway.external-relay.xyz with ESMTP id 7712318;
+    Mon, 07 Sep 2026 21:39:58 +0530
+Authentication-Results: mx.organization.internal;
+    spf=fail (sender IP 198.51.100.22 not permitted);
+    dkim=fail header.d=sbi-corp-demo.test;
+    dmarc=fail (p=reject dis=reject)
+Received-SPF: fail (mx.organization.internal: domain of sbi-corp-demo.test does not designate 198.51.100.22 as permitted sender)
+Content-Type: text/plain; charset="utf-8"
+
+STATE BANK OF INDIA - URGENT SECURITY ADVISORY
+
+Dear Valued Corporate Banking Customer,
+
+We have detected anomalous sign-in activity attempting to access your corporate treasury account from an unverified IP address.
+To prevent unauthorized fund transfers, your online corporate banking privileges have been temporarily restricted.
+
+Immediate Action Required:
+You are required to verify your corporate master credentials within 2 hours under BSA 2023 compliance regulations.
+
+>> CLICK TO AUTHENTICATE YOUR CORPORATE CREDENTIALS:
+https://sbi-corp-demo.test/portal/secure-login/auth.php
+
+Failure to verify will result in permanent suspension of corporate net-banking services.
+
+State Bank of India - Cyber Security Division

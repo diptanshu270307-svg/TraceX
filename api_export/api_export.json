@@ -1,0 +1,473 @@
+{
+  "nodes": [
+    {
+      "id": "alerts@sbi-corp-demo.test",
+      "type": "email_address",
+      "label": "alerts@sbi-corp-demo.test",
+      "community": null,
+      "centrality": 0.472727,
+      "threat_score": 94,
+      "scan_ids": [
+        "ml-demo-001"
+      ],
+      "auth": {
+        "spf_pass": false,
+        "dkim_pass": false,
+        "dmarc_pass": false
+      },
+      "verdict": "phishing"
+    },
+    {
+      "id": "domain:sbi-corp-demo.test",
+      "type": "domain",
+      "label": "sbi-corp-demo.test",
+      "community": null,
+      "centrality": 0.0,
+      "threat_score": null,
+      "scan_ids": [],
+      "auth": {},
+      "verdict": null
+    },
+    {
+      "id": "finance@corp.internal",
+      "type": "email_address",
+      "label": "finance@corp.internal",
+      "community": 1,
+      "centrality": 0.509091,
+      "threat_score": null,
+      "scan_ids": [],
+      "auth": {},
+      "verdict": null
+    },
+    {
+      "id": "domain:corp.internal",
+      "type": "domain",
+      "label": "corp.internal",
+      "community": 1,
+      "centrality": 0.545455,
+      "threat_score": null,
+      "scan_ids": [],
+      "auth": {},
+      "verdict": null
+    },
+    {
+      "id": "ip:203.0.113.42",
+      "type": "ip",
+      "label": "203.0.113.42",
+      "community": null,
+      "centrality": 0.0,
+      "threat_score": null,
+      "scan_ids": [],
+      "auth": {},
+      "verdict": null
+    },
+    {
+      "id": "url:e219ef8080",
+      "type": "url",
+      "label": "https://sbi-corp-demo.test/verify",
+      "community": null,
+      "centrality": 0.0,
+      "threat_score": null,
+      "scan_ids": [],
+      "auth": {},
+      "verdict": null
+    },
+    {
+      "id": "no-reply-aws@amazon.com",
+      "type": "email_address",
+      "label": "no-reply-aws@amazon.com",
+      "community": 2,
+      "centrality": 0.6,
+      "threat_score": 6,
+      "scan_ids": [
+        "ml-demo-002"
+      ],
+      "auth": {
+        "spf_pass": true,
+        "dkim_pass": true,
+        "dmarc_pass": true
+      },
+      "verdict": "clean"
+    },
+    {
+      "id": "domain:amazon.com",
+      "type": "domain",
+      "label": "amazon.com",
+      "community": 2,
+      "centrality": 0.0,
+      "threat_score": null,
+      "scan_ids": [],
+      "auth": {},
+      "verdict": null
+    },
+    {
+      "id": "devops@corp.internal",
+      "type": "email_address",
+      "label": "devops@corp.internal",
+      "community": 1,
+      "centrality": 0.545455,
+      "threat_score": null,
+      "scan_ids": [],
+      "auth": {},
+      "verdict": null
+    },
+    {
+      "id": "ip:54.240.1.1",
+      "type": "ip",
+      "label": "54.240.1.1",
+      "community": 2,
+      "centrality": 0.0,
+      "threat_score": null,
+      "scan_ids": [],
+      "auth": {},
+      "verdict": null
+    },
+    {
+      "id": "url:f254ace68d",
+      "type": "url",
+      "label": "https://console.aws.amazon.com/billing",
+      "community": 2,
+      "centrality": 0.181818,
+      "threat_score": null,
+      "scan_ids": [],
+      "auth": {},
+      "verdict": null
+    },
+    {
+      "id": "domain:console.aws.amazon.com",
+      "type": "domain",
+      "label": "console.aws.amazon.com",
+      "community": 2,
+      "centrality": 0.0,
+      "threat_score": null,
+      "scan_ids": [],
+      "auth": {},
+      "verdict": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "alerts@sbi-corp-demo.test",
+      "target": "domain:sbi-corp-demo.test",
+      "type": "belongs_to",
+      "scan_id": "ml-demo-001",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "alerts@sbi-corp-demo.test",
+      "target": "finance@corp.internal",
+      "type": "sent",
+      "scan_id": "ml-demo-001",
+      "subject": "Urgent Corporate Invoice Verification Required",
+      "threat_score": 94
+    },
+    {
+      "source": "alerts@sbi-corp-demo.test",
+      "target": "ip:203.0.113.42",
+      "type": "originated_from",
+      "scan_id": "ml-demo-001",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "alerts@sbi-corp-demo.test",
+      "target": "url:e219ef8080",
+      "type": "contains_url",
+      "scan_id": "ml-demo-001",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "finance@corp.internal",
+      "target": "domain:corp.internal",
+      "type": "belongs_to",
+      "scan_id": "ml-demo-001",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "url:e219ef8080",
+      "target": "domain:sbi-corp-demo.test",
+      "type": "url_hosted_on",
+      "scan_id": "ml-demo-001",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "no-reply-aws@amazon.com",
+      "target": "domain:amazon.com",
+      "type": "belongs_to",
+      "scan_id": "ml-demo-002",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "no-reply-aws@amazon.com",
+      "target": "devops@corp.internal",
+      "type": "sent",
+      "scan_id": "ml-demo-002",
+      "subject": "AWS Billing Notification: August Statement Available",
+      "threat_score": 6
+    },
+    {
+      "source": "no-reply-aws@amazon.com",
+      "target": "ip:54.240.1.1",
+      "type": "originated_from",
+      "scan_id": "ml-demo-002",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "no-reply-aws@amazon.com",
+      "target": "url:f254ace68d",
+      "type": "contains_url",
+      "scan_id": "ml-demo-002",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "devops@corp.internal",
+      "target": "domain:corp.internal",
+      "type": "belongs_to",
+      "scan_id": "ml-demo-002",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "url:f254ace68d",
+      "target": "domain:console.aws.amazon.com",
+      "type": "url_hosted_on",
+      "scan_id": "ml-demo-002",
+      "subject": null,
+      "threat_score": null
+    }
+  ],
+  "communities": [
+    {
+      "community_id": 0,
+      "size": 4,
+      "members": [
+        {
+          "id": "alerts@sbi-corp-demo.test",
+          "type": "email_address",
+          "label": "alerts@sbi-corp-demo.test",
+          "centrality": 0.4727272727272727
+        },
+        {
+          "id": "domain:sbi-corp-demo.test",
+          "type": "domain",
+          "label": "sbi-corp-demo.test",
+          "centrality": 0.0
+        },
+        {
+          "id": "ip:203.0.113.42",
+          "type": "ip",
+          "label": "203.0.113.42",
+          "centrality": 0.0
+        },
+        {
+          "id": "url:e219ef8080",
+          "type": "url",
+          "label": "https://sbi-corp-demo.test/verify",
+          "centrality": 0.0
+        }
+      ],
+      "top_brokers": [
+        {
+          "id": "alerts@sbi-corp-demo.test",
+          "type": "email_address",
+          "label": "alerts@sbi-corp-demo.test",
+          "centrality": 0.4727272727272727
+        }
+      ],
+      "avg_threat_score": 94.0,
+      "domains": [
+        "sbi-corp-demo.test"
+      ],
+      "ips": [
+        "203.0.113.42"
+      ],
+      "risk_level": "critical"
+    },
+    {
+      "community_id": 2,
+      "size": 5,
+      "members": [
+        {
+          "id": "no-reply-aws@amazon.com",
+          "type": "email_address",
+          "label": "no-reply-aws@amazon.com",
+          "centrality": 0.6
+        },
+        {
+          "id": "url:f254ace68d",
+          "type": "url",
+          "label": "https://console.aws.amazon.com/billing",
+          "centrality": 0.18181818181818182
+        },
+        {
+          "id": "domain:amazon.com",
+          "type": "domain",
+          "label": "amazon.com",
+          "centrality": 0.0
+        },
+        {
+          "id": "ip:54.240.1.1",
+          "type": "ip",
+          "label": "54.240.1.1",
+          "centrality": 0.0
+        },
+        {
+          "id": "domain:console.aws.amazon.com",
+          "type": "domain",
+          "label": "console.aws.amazon.com",
+          "centrality": 0.0
+        }
+      ],
+      "top_brokers": [
+        {
+          "id": "no-reply-aws@amazon.com",
+          "type": "email_address",
+          "label": "no-reply-aws@amazon.com",
+          "centrality": 0.6
+        },
+        {
+          "id": "url:f254ace68d",
+          "type": "url",
+          "label": "https://console.aws.amazon.com/billing",
+          "centrality": 0.18181818181818182
+        }
+      ],
+      "avg_threat_score": 6.0,
+      "domains": [
+        "amazon.com",
+        "console.aws.amazon.com"
+      ],
+      "ips": [
+        "54.240.1.1"
+      ],
+      "risk_level": "low"
+    },
+    {
+      "community_id": 1,
+      "size": 3,
+      "members": [
+        {
+          "id": "domain:corp.internal",
+          "type": "domain",
+          "label": "corp.internal",
+          "centrality": 0.5454545454545454
+        },
+        {
+          "id": "devops@corp.internal",
+          "type": "email_address",
+          "label": "devops@corp.internal",
+          "centrality": 0.5454545454545454
+        },
+        {
+          "id": "finance@corp.internal",
+          "type": "email_address",
+          "label": "finance@corp.internal",
+          "centrality": 0.509090909090909
+        }
+      ],
+      "top_brokers": [
+        {
+          "id": "domain:corp.internal",
+          "type": "domain",
+          "label": "corp.internal",
+          "centrality": 0.5454545454545454
+        },
+        {
+          "id": "devops@corp.internal",
+          "type": "email_address",
+          "label": "devops@corp.internal",
+          "centrality": 0.5454545454545454
+        },
+        {
+          "id": "finance@corp.internal",
+          "type": "email_address",
+          "label": "finance@corp.internal",
+          "centrality": 0.509090909090909
+        }
+      ],
+      "avg_threat_score": null,
+      "domains": [
+        "corp.internal"
+      ],
+      "ips": [],
+      "risk_level": "low"
+    }
+  ],
+  "top_brokers": [
+    {
+      "id": "no-reply-aws@amazon.com",
+      "type": "email_address",
+      "label": "no-reply-aws@amazon.com",
+      "centrality": 0.6,
+      "community": 2,
+      "threat_score": 6
+    },
+    {
+      "id": "domain:corp.internal",
+      "type": "domain",
+      "label": "corp.internal",
+      "centrality": 0.545455,
+      "community": 1,
+      "threat_score": null
+    },
+    {
+      "id": "devops@corp.internal",
+      "type": "email_address",
+      "label": "devops@corp.internal",
+      "centrality": 0.545455,
+      "community": 1,
+      "threat_score": null
+    },
+    {
+      "id": "finance@corp.internal",
+      "type": "email_address",
+      "label": "finance@corp.internal",
+      "centrality": 0.509091,
+      "community": 1,
+      "threat_score": null
+    },
+    {
+      "id": "alerts@sbi-corp-demo.test",
+      "type": "email_address",
+      "label": "alerts@sbi-corp-demo.test",
+      "centrality": 0.472727,
+      "community": 0,
+      "threat_score": 94
+    },
+    {
+      "id": "url:f254ace68d",
+      "type": "url",
+      "label": "https://console.aws.amazon.com/billing",
+      "centrality": 0.181818,
+      "community": 2,
+      "threat_score": null
+    }
+  ],
+  "stats": {
+    "total_nodes": 12,
+    "total_edges": 12,
+    "node_types": {
+      "email_address": 4,
+      "domain": 4,
+      "ip": 2,
+      "url": 2
+    },
+    "edge_types": {
+      "belongs_to": 4,
+      "sent": 2,
+      "originated_from": 2,
+      "contains_url": 2,
+      "url_hosted_on": 2
+    },
+    "num_communities": 3,
+    "high_risk_communities": 1
+  },
+  "generated_at": "2026-09-07T17:25:58.499968+00:00"
+}

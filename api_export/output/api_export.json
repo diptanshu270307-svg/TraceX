@@ -1,0 +1,1506 @@
+{
+  "nodes": [
+    {
+      "id": "it-support@micros0ft-security.com",
+      "type": "email_address",
+      "label": "it-support@micros0ft-security.com",
+      "community": 3,
+      "centrality": 0.284975,
+      "threat_score": 92,
+      "scan_ids": [
+        "scan-001"
+      ],
+      "auth": {
+        "spf_pass": false,
+        "dkim_pass": false,
+        "dmarc_pass": false
+      },
+      "verdict": "phishing"
+    },
+    {
+      "id": "domain:micros0ft-security.com",
+      "type": "domain",
+      "label": "micros0ft-security.com",
+      "community": 3,
+      "centrality": 0.0,
+      "threat_score": null,
+      "scan_ids": [],
+      "auth": {},
+      "verdict": null
+    },
+    {
+      "id": "hr@targetcorp.com",
+      "type": "email_address",
+      "label": "hr@targetcorp.com",
+      "community": 1,
+      "centrality": 0.019928,
+      "threat_score": null,
+      "scan_ids": [],
+      "auth": {},
+      "verdict": null
+    },
+    {
+      "id": "domain:targetcorp.com",
+      "type": "domain",
+      "label": "targetcorp.com",
+      "community": 1,
+      "centrality": 0.422672,
+      "threat_score": null,
+      "scan_ids": [],
+      "auth": {},
+      "verdict": null
+    },
+    {
+      "id": "finance@targetcorp.com",
+      "type": "email_address",
+      "label": "finance@targetcorp.com",
+      "community": 2,
+      "centrality": 0.40009,
+      "threat_score": null,
+      "scan_ids": [],
+      "auth": {},
+      "verdict": null
+    },
+    {
+      "id": "ip:185.220.101.42",
+      "type": "ip",
+      "label": "185.220.101.42",
+      "community": 3,
+      "centrality": 0.0,
+      "threat_score": null,
+      "scan_ids": [],
+      "auth": {},
+      "verdict": null
+    },
+    {
+      "id": "url:d205a1db0f",
+      "type": "url",
+      "label": "https://micros0ft-security.com/verify-account",
+      "community": 3,
+      "centrality": 0.0,
+      "threat_score": null,
+      "scan_ids": [],
+      "auth": {},
+      "verdict": null
+    },
+    {
+      "id": "url:7d6d1a5692",
+      "type": "url",
+      "label": "https://bit.ly/3xPhish1",
+      "community": 3,
+      "centrality": 0.051282,
+      "threat_score": null,
+      "scan_ids": [],
+      "auth": {},
+      "verdict": null
+    },
+    {
+      "id": "domain:bit.ly",
+      "type": "domain",
+      "label": "bit.ly",
+      "community": 3,
+      "centrality": 0.0,
+      "threat_score": null,
+      "scan_ids": [],
+      "auth": {},
+      "verdict": null
+    },
+    {
+      "id": "admin@micr0soft-helpdesk.com",
+      "type": "email_address",
+      "label": "admin@micr0soft-helpdesk.com",
+      "community": 3,
+      "centrality": 0.113855,
+      "threat_score": 88,
+      "scan_ids": [
+        "scan-002"
+      ],
+      "auth": {
+        "spf_pass": false,
+        "dkim_pass": false,
+        "dmarc_pass": false
+      },
+      "verdict": "phishing"
+    },
+    {
+      "id": "domain:micr0soft-helpdesk.com",
+      "type": "domain",
+      "label": "micr0soft-helpdesk.com",
+      "community": 3,
+      "centrality": 0.0,
+      "threat_score": null,
+      "scan_ids": [],
+      "auth": {},
+      "verdict": null
+    },
+    {
+      "id": "ceo@targetcorp.com",
+      "type": "email_address",
+      "label": "ceo@targetcorp.com",
+      "community": 1,
+      "centrality": 0.030184,
+      "threat_score": null,
+      "scan_ids": [],
+      "auth": {},
+      "verdict": null
+    },
+    {
+      "id": "url:618855f0a6",
+      "type": "url",
+      "label": "https://micr0soft-helpdesk.com/reset-password",
+      "community": 3,
+      "centrality": 0.0,
+      "threat_score": null,
+      "scan_ids": [],
+      "auth": {},
+      "verdict": null
+    },
+    {
+      "id": "security@m1crosoft-alerts.com",
+      "type": "email_address",
+      "label": "security@m1crosoft-alerts.com",
+      "community": 3,
+      "centrality": 0.208547,
+      "threat_score": 95,
+      "scan_ids": [
+        "scan-003"
+      ],
+      "auth": {
+        "spf_pass": false,
+        "dkim_pass": false,
+        "dmarc_pass": false
+      },
+      "verdict": "phishing"
+    },
+    {
+      "id": "domain:m1crosoft-alerts.com",
+      "type": "domain",
+      "label": "m1crosoft-alerts.com",
+      "community": 3,
+      "centrality": 0.0,
+      "threat_score": null,
+      "scan_ids": [],
+      "auth": {},
+      "verdict": null
+    },
+    {
+      "id": "it-admin@targetcorp.com",
+      "type": "email_address",
+      "label": "it-admin@targetcorp.com",
+      "community": 4,
+      "centrality": 0.250022,
+      "threat_score": null,
+      "scan_ids": [],
+      "auth": {},
+      "verdict": null
+    },
+    {
+      "id": "cto@targetcorp.com",
+      "type": "email_address",
+      "label": "cto@targetcorp.com",
+      "community": 1,
+      "centrality": 0.020603,
+      "threat_score": null,
+      "scan_ids": [],
+      "auth": {},
+      "verdict": null
+    },
+    {
+      "id": "url:ffd8d569ef",
+      "type": "url",
+      "label": "https://m1crosoft-alerts.com/security-check",
+      "community": 3,
+      "centrality": 0.0,
+      "threat_score": null,
+      "scan_ids": [],
+      "auth": {},
+      "verdict": null
+    },
+    {
+      "id": "alerts@secure-bankofamerica.com",
+      "type": "email_address",
+      "label": "alerts@secure-bankofamerica.com",
+      "community": 5,
+      "centrality": 0.205443,
+      "threat_score": 85,
+      "scan_ids": [
+        "scan-004"
+      ],
+      "auth": {
+        "spf_pass": false,
+        "dkim_pass": true,
+        "dmarc_pass": false
+      },
+      "verdict": "phishing"
+    },
+    {
+      "id": "domain:secure-bankofamerica.com",
+      "type": "domain",
+      "label": "secure-bankofamerica.com",
+      "community": 5,
+      "centrality": 0.0,
+      "threat_score": null,
+      "scan_ids": [],
+      "auth": {},
+      "verdict": null
+    },
+    {
+      "id": "ip:91.215.85.7",
+      "type": "ip",
+      "label": "91.215.85.7",
+      "community": 5,
+      "centrality": 0.0,
+      "threat_score": null,
+      "scan_ids": [],
+      "auth": {},
+      "verdict": null
+    },
+    {
+      "id": "url:a6ca37a1eb",
+      "type": "url",
+      "label": "https://secure-bankofamerica.com/verify-transaction",
+      "community": 5,
+      "centrality": 0.0,
+      "threat_score": null,
+      "scan_ids": [],
+      "auth": {},
+      "verdict": null
+    },
+    {
+      "id": "url:006aabf67e",
+      "type": "url",
+      "label": "https://evil-redirect.xyz/bank",
+      "community": 5,
+      "centrality": 0.023707,
+      "threat_score": null,
+      "scan_ids": [],
+      "auth": {},
+      "verdict": null
+    },
+    {
+      "id": "domain:evil-redirect.xyz",
+      "type": "domain",
+      "label": "evil-redirect.xyz",
+      "community": 5,
+      "centrality": 0.007197,
+      "threat_score": null,
+      "scan_ids": [],
+      "auth": {},
+      "verdict": null
+    },
+    {
+      "id": "noreply@chase-secure-login.com",
+      "type": "email_address",
+      "label": "noreply@chase-secure-login.com",
+      "community": 2,
+      "centrality": 0.220198,
+      "threat_score": 82,
+      "scan_ids": [
+        "scan-005"
+      ],
+      "auth": {
+        "spf_pass": false,
+        "dkim_pass": false,
+        "dmarc_pass": false
+      },
+      "verdict": "phishing"
+    },
+    {
+      "id": "domain:chase-secure-login.com",
+      "type": "domain",
+      "label": "chase-secure-login.com",
+      "community": 2,
+      "centrality": 0.0,
+      "threat_score": null,
+      "scan_ids": [],
+      "auth": {},
+      "verdict": null
+    },
+    {
+      "id": "cfo@targetcorp.com",
+      "type": "email_address",
+      "label": "cfo@targetcorp.com",
+      "community": 2,
+      "centrality": 0.05605,
+      "threat_score": null,
+      "scan_ids": [],
+      "auth": {},
+      "verdict": null
+    },
+    {
+      "id": "ip:91.215.85.12",
+      "type": "ip",
+      "label": "91.215.85.12",
+      "community": 2,
+      "centrality": 0.0,
+      "threat_score": null,
+      "scan_ids": [],
+      "auth": {},
+      "verdict": null
+    },
+    {
+      "id": "url:a28a4bf121",
+      "type": "url",
+      "label": "https://chase-secure-login.com/unlock",
+      "community": 2,
+      "centrality": 0.0,
+      "threat_score": null,
+      "scan_ids": [],
+      "auth": {},
+      "verdict": null
+    },
+    {
+      "id": "url:0051204d5c",
+      "type": "url",
+      "label": "https://evil-redirect.xyz/chase",
+      "community": 5,
+      "centrality": 0.032074,
+      "threat_score": null,
+      "scan_ids": [],
+      "auth": {},
+      "verdict": null
+    },
+    {
+      "id": "newsletter@github.com",
+      "type": "email_address",
+      "label": "newsletter@github.com",
+      "community": null,
+      "centrality": 0.148448,
+      "threat_score": 5,
+      "scan_ids": [
+        "scan-006"
+      ],
+      "auth": {
+        "spf_pass": true,
+        "dkim_pass": true,
+        "dmarc_pass": true
+      },
+      "verdict": "clean"
+    },
+    {
+      "id": "domain:github.com",
+      "type": "domain",
+      "label": "github.com",
+      "community": null,
+      "centrality": 0.0,
+      "threat_score": null,
+      "scan_ids": [],
+      "auth": {},
+      "verdict": null
+    },
+    {
+      "id": "dev@targetcorp.com",
+      "type": "email_address",
+      "label": "dev@targetcorp.com",
+      "community": null,
+      "centrality": 0.188934,
+      "threat_score": null,
+      "scan_ids": [],
+      "auth": {},
+      "verdict": null
+    },
+    {
+      "id": "ip:140.82.112.1",
+      "type": "ip",
+      "label": "140.82.112.1",
+      "community": null,
+      "centrality": 0.0,
+      "threat_score": null,
+      "scan_ids": [],
+      "auth": {},
+      "verdict": null
+    },
+    {
+      "id": "url:46a3ce25ff",
+      "type": "url",
+      "label": "https://github.com/universe",
+      "community": null,
+      "centrality": 0.0,
+      "threat_score": null,
+      "scan_ids": [],
+      "auth": {},
+      "verdict": null
+    },
+    {
+      "id": "billing@aws.amazon.com",
+      "type": "email_address",
+      "label": "billing@aws.amazon.com",
+      "community": 4,
+      "centrality": 0.195682,
+      "threat_score": 3,
+      "scan_ids": [
+        "scan-007"
+      ],
+      "auth": {
+        "spf_pass": true,
+        "dkim_pass": true,
+        "dmarc_pass": true
+      },
+      "verdict": "clean"
+    },
+    {
+      "id": "domain:aws.amazon.com",
+      "type": "domain",
+      "label": "aws.amazon.com",
+      "community": 4,
+      "centrality": 0.0,
+      "threat_score": null,
+      "scan_ids": [],
+      "auth": {},
+      "verdict": null
+    },
+    {
+      "id": "ip:54.240.1.1",
+      "type": "ip",
+      "label": "54.240.1.1",
+      "community": 4,
+      "centrality": 0.0,
+      "threat_score": null,
+      "scan_ids": [],
+      "auth": {},
+      "verdict": null
+    },
+    {
+      "id": "url:f254ace68d",
+      "type": "url",
+      "label": "https://console.aws.amazon.com/billing",
+      "community": 4,
+      "centrality": 0.051282,
+      "threat_score": null,
+      "scan_ids": [],
+      "auth": {},
+      "verdict": null
+    },
+    {
+      "id": "domain:console.aws.amazon.com",
+      "type": "domain",
+      "label": "console.aws.amazon.com",
+      "community": 4,
+      "centrality": 0.0,
+      "threat_score": null,
+      "scan_ids": [],
+      "auth": {},
+      "verdict": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "it-support@micros0ft-security.com",
+      "target": "domain:micros0ft-security.com",
+      "type": "belongs_to",
+      "scan_id": "scan-001",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "it-support@micros0ft-security.com",
+      "target": "hr@targetcorp.com",
+      "type": "sent",
+      "scan_id": "scan-001",
+      "subject": "Urgent: Your account will be suspended",
+      "threat_score": 92
+    },
+    {
+      "source": "it-support@micros0ft-security.com",
+      "target": "finance@targetcorp.com",
+      "type": "sent",
+      "scan_id": "scan-001",
+      "subject": "Urgent: Your account will be suspended",
+      "threat_score": 92
+    },
+    {
+      "source": "it-support@micros0ft-security.com",
+      "target": "ip:185.220.101.42",
+      "type": "originated_from",
+      "scan_id": "scan-001",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "it-support@micros0ft-security.com",
+      "target": "url:d205a1db0f",
+      "type": "contains_url",
+      "scan_id": "scan-001",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "it-support@micros0ft-security.com",
+      "target": "url:7d6d1a5692",
+      "type": "contains_url",
+      "scan_id": "scan-001",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "hr@targetcorp.com",
+      "target": "domain:targetcorp.com",
+      "type": "belongs_to",
+      "scan_id": "scan-001",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "finance@targetcorp.com",
+      "target": "domain:targetcorp.com",
+      "type": "belongs_to",
+      "scan_id": "scan-001",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "finance@targetcorp.com",
+      "target": "domain:targetcorp.com",
+      "type": "belongs_to",
+      "scan_id": "scan-004",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "finance@targetcorp.com",
+      "target": "domain:targetcorp.com",
+      "type": "belongs_to",
+      "scan_id": "scan-005",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "url:d205a1db0f",
+      "target": "domain:micros0ft-security.com",
+      "type": "url_hosted_on",
+      "scan_id": "scan-001",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "url:7d6d1a5692",
+      "target": "domain:bit.ly",
+      "type": "url_hosted_on",
+      "scan_id": "scan-001",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "url:7d6d1a5692",
+      "target": "domain:bit.ly",
+      "type": "url_hosted_on",
+      "scan_id": "scan-003",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "admin@micr0soft-helpdesk.com",
+      "target": "domain:micr0soft-helpdesk.com",
+      "type": "belongs_to",
+      "scan_id": "scan-002",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "admin@micr0soft-helpdesk.com",
+      "target": "ceo@targetcorp.com",
+      "type": "sent",
+      "scan_id": "scan-002",
+      "subject": "Password expires in 24 hours",
+      "threat_score": 88
+    },
+    {
+      "source": "admin@micr0soft-helpdesk.com",
+      "target": "ip:185.220.101.42",
+      "type": "originated_from",
+      "scan_id": "scan-002",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "admin@micr0soft-helpdesk.com",
+      "target": "it-support@micros0ft-security.com",
+      "type": "same_ip",
+      "scan_id": null,
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "admin@micr0soft-helpdesk.com",
+      "target": "url:618855f0a6",
+      "type": "contains_url",
+      "scan_id": "scan-002",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "ceo@targetcorp.com",
+      "target": "domain:targetcorp.com",
+      "type": "belongs_to",
+      "scan_id": "scan-002",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "url:618855f0a6",
+      "target": "domain:micr0soft-helpdesk.com",
+      "type": "url_hosted_on",
+      "scan_id": "scan-002",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "security@m1crosoft-alerts.com",
+      "target": "domain:m1crosoft-alerts.com",
+      "type": "belongs_to",
+      "scan_id": "scan-003",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "security@m1crosoft-alerts.com",
+      "target": "it-admin@targetcorp.com",
+      "type": "sent",
+      "scan_id": "scan-003",
+      "subject": "Security Alert: Unusual sign-in activity",
+      "threat_score": 95
+    },
+    {
+      "source": "security@m1crosoft-alerts.com",
+      "target": "cto@targetcorp.com",
+      "type": "sent",
+      "scan_id": "scan-003",
+      "subject": "Security Alert: Unusual sign-in activity",
+      "threat_score": 95
+    },
+    {
+      "source": "security@m1crosoft-alerts.com",
+      "target": "ip:185.220.101.42",
+      "type": "originated_from",
+      "scan_id": "scan-003",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "security@m1crosoft-alerts.com",
+      "target": "admin@micr0soft-helpdesk.com",
+      "type": "same_ip",
+      "scan_id": null,
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "security@m1crosoft-alerts.com",
+      "target": "it-support@micros0ft-security.com",
+      "type": "same_ip",
+      "scan_id": null,
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "security@m1crosoft-alerts.com",
+      "target": "url:ffd8d569ef",
+      "type": "contains_url",
+      "scan_id": "scan-003",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "security@m1crosoft-alerts.com",
+      "target": "url:7d6d1a5692",
+      "type": "contains_url",
+      "scan_id": "scan-003",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "it-admin@targetcorp.com",
+      "target": "domain:targetcorp.com",
+      "type": "belongs_to",
+      "scan_id": "scan-003",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "it-admin@targetcorp.com",
+      "target": "domain:targetcorp.com",
+      "type": "belongs_to",
+      "scan_id": "scan-007",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "cto@targetcorp.com",
+      "target": "domain:targetcorp.com",
+      "type": "belongs_to",
+      "scan_id": "scan-003",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "url:ffd8d569ef",
+      "target": "domain:m1crosoft-alerts.com",
+      "type": "url_hosted_on",
+      "scan_id": "scan-003",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "alerts@secure-bankofamerica.com",
+      "target": "domain:secure-bankofamerica.com",
+      "type": "belongs_to",
+      "scan_id": "scan-004",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "alerts@secure-bankofamerica.com",
+      "target": "finance@targetcorp.com",
+      "type": "sent",
+      "scan_id": "scan-004",
+      "subject": "Suspicious transaction detected on your account",
+      "threat_score": 85
+    },
+    {
+      "source": "alerts@secure-bankofamerica.com",
+      "target": "ip:91.215.85.7",
+      "type": "originated_from",
+      "scan_id": "scan-004",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "alerts@secure-bankofamerica.com",
+      "target": "url:a6ca37a1eb",
+      "type": "contains_url",
+      "scan_id": "scan-004",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "alerts@secure-bankofamerica.com",
+      "target": "url:006aabf67e",
+      "type": "contains_url",
+      "scan_id": "scan-004",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "url:a6ca37a1eb",
+      "target": "domain:secure-bankofamerica.com",
+      "type": "url_hosted_on",
+      "scan_id": "scan-004",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "url:006aabf67e",
+      "target": "domain:evil-redirect.xyz",
+      "type": "url_hosted_on",
+      "scan_id": "scan-004",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "noreply@chase-secure-login.com",
+      "target": "domain:chase-secure-login.com",
+      "type": "belongs_to",
+      "scan_id": "scan-005",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "noreply@chase-secure-login.com",
+      "target": "cfo@targetcorp.com",
+      "type": "sent",
+      "scan_id": "scan-005",
+      "subject": "Your account has been temporarily locked",
+      "threat_score": 82
+    },
+    {
+      "source": "noreply@chase-secure-login.com",
+      "target": "finance@targetcorp.com",
+      "type": "sent",
+      "scan_id": "scan-005",
+      "subject": "Your account has been temporarily locked",
+      "threat_score": 82
+    },
+    {
+      "source": "noreply@chase-secure-login.com",
+      "target": "ip:91.215.85.12",
+      "type": "originated_from",
+      "scan_id": "scan-005",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "noreply@chase-secure-login.com",
+      "target": "url:a28a4bf121",
+      "type": "contains_url",
+      "scan_id": "scan-005",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "noreply@chase-secure-login.com",
+      "target": "url:0051204d5c",
+      "type": "contains_url",
+      "scan_id": "scan-005",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "cfo@targetcorp.com",
+      "target": "domain:targetcorp.com",
+      "type": "belongs_to",
+      "scan_id": "scan-005",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "url:a28a4bf121",
+      "target": "domain:chase-secure-login.com",
+      "type": "url_hosted_on",
+      "scan_id": "scan-005",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "url:0051204d5c",
+      "target": "domain:evil-redirect.xyz",
+      "type": "url_hosted_on",
+      "scan_id": "scan-005",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "newsletter@github.com",
+      "target": "domain:github.com",
+      "type": "belongs_to",
+      "scan_id": "scan-006",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "newsletter@github.com",
+      "target": "dev@targetcorp.com",
+      "type": "sent",
+      "scan_id": "scan-006",
+      "subject": "GitHub Universe 2026 \u2014 Early bird registration",
+      "threat_score": 5
+    },
+    {
+      "source": "newsletter@github.com",
+      "target": "ip:140.82.112.1",
+      "type": "originated_from",
+      "scan_id": "scan-006",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "newsletter@github.com",
+      "target": "url:46a3ce25ff",
+      "type": "contains_url",
+      "scan_id": "scan-006",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "dev@targetcorp.com",
+      "target": "domain:targetcorp.com",
+      "type": "belongs_to",
+      "scan_id": "scan-006",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "url:46a3ce25ff",
+      "target": "domain:github.com",
+      "type": "url_hosted_on",
+      "scan_id": "scan-006",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "billing@aws.amazon.com",
+      "target": "domain:aws.amazon.com",
+      "type": "belongs_to",
+      "scan_id": "scan-007",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "billing@aws.amazon.com",
+      "target": "it-admin@targetcorp.com",
+      "type": "sent",
+      "scan_id": "scan-007",
+      "subject": "Your AWS invoice for August 2026",
+      "threat_score": 3
+    },
+    {
+      "source": "billing@aws.amazon.com",
+      "target": "ip:54.240.1.1",
+      "type": "originated_from",
+      "scan_id": "scan-007",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "billing@aws.amazon.com",
+      "target": "url:f254ace68d",
+      "type": "contains_url",
+      "scan_id": "scan-007",
+      "subject": null,
+      "threat_score": null
+    },
+    {
+      "source": "url:f254ace68d",
+      "target": "domain:console.aws.amazon.com",
+      "type": "url_hosted_on",
+      "scan_id": "scan-007",
+      "subject": null,
+      "threat_score": null
+    }
+  ],
+  "communities": [
+    {
+      "community_id": 3,
+      "size": 12,
+      "members": [
+        {
+          "id": "it-support@micros0ft-security.com",
+          "type": "email_address",
+          "label": "it-support@micros0ft-security.com",
+          "centrality": 0.284975258659469
+        },
+        {
+          "id": "security@m1crosoft-alerts.com",
+          "type": "email_address",
+          "label": "security@m1crosoft-alerts.com",
+          "centrality": 0.20854700854700858
+        },
+        {
+          "id": "admin@micr0soft-helpdesk.com",
+          "type": "email_address",
+          "label": "admin@micr0soft-helpdesk.com",
+          "centrality": 0.11385515069725591
+        },
+        {
+          "id": "url:7d6d1a5692",
+          "type": "url",
+          "label": "https://bit.ly/3xPhish1",
+          "centrality": 0.05128205128205128
+        },
+        {
+          "id": "domain:micros0ft-security.com",
+          "type": "domain",
+          "label": "micros0ft-security.com",
+          "centrality": 0.0
+        },
+        {
+          "id": "ip:185.220.101.42",
+          "type": "ip",
+          "label": "185.220.101.42",
+          "centrality": 0.0
+        },
+        {
+          "id": "url:d205a1db0f",
+          "type": "url",
+          "label": "https://micros0ft-security.com/verify-account",
+          "centrality": 0.0
+        },
+        {
+          "id": "domain:bit.ly",
+          "type": "domain",
+          "label": "bit.ly",
+          "centrality": 0.0
+        },
+        {
+          "id": "domain:micr0soft-helpdesk.com",
+          "type": "domain",
+          "label": "micr0soft-helpdesk.com",
+          "centrality": 0.0
+        },
+        {
+          "id": "url:618855f0a6",
+          "type": "url",
+          "label": "https://micr0soft-helpdesk.com/reset-password",
+          "centrality": 0.0
+        },
+        {
+          "id": "domain:m1crosoft-alerts.com",
+          "type": "domain",
+          "label": "m1crosoft-alerts.com",
+          "centrality": 0.0
+        },
+        {
+          "id": "url:ffd8d569ef",
+          "type": "url",
+          "label": "https://m1crosoft-alerts.com/security-check",
+          "centrality": 0.0
+        }
+      ],
+      "top_brokers": [
+        {
+          "id": "it-support@micros0ft-security.com",
+          "type": "email_address",
+          "label": "it-support@micros0ft-security.com",
+          "centrality": 0.284975258659469
+        },
+        {
+          "id": "security@m1crosoft-alerts.com",
+          "type": "email_address",
+          "label": "security@m1crosoft-alerts.com",
+          "centrality": 0.20854700854700858
+        },
+        {
+          "id": "admin@micr0soft-helpdesk.com",
+          "type": "email_address",
+          "label": "admin@micr0soft-helpdesk.com",
+          "centrality": 0.11385515069725591
+        }
+      ],
+      "avg_threat_score": 91.7,
+      "domains": [
+        "bit.ly",
+        "m1crosoft-alerts.com",
+        "micr0soft-helpdesk.com",
+        "micros0ft-security.com"
+      ],
+      "ips": [
+        "185.220.101.42"
+      ],
+      "risk_level": "critical"
+    },
+    {
+      "community_id": 5,
+      "size": 7,
+      "members": [
+        {
+          "id": "alerts@secure-bankofamerica.com",
+          "type": "email_address",
+          "label": "alerts@secure-bankofamerica.com",
+          "centrality": 0.20544309491677898
+        },
+        {
+          "id": "url:0051204d5c",
+          "type": "url",
+          "label": "https://evil-redirect.xyz/chase",
+          "centrality": 0.03207377417903732
+        },
+        {
+          "id": "url:006aabf67e",
+          "type": "url",
+          "label": "https://evil-redirect.xyz/bank",
+          "centrality": 0.02370670265407109
+        },
+        {
+          "id": "domain:evil-redirect.xyz",
+          "type": "domain",
+          "label": "evil-redirect.xyz",
+          "centrality": 0.007197480881691407
+        },
+        {
+          "id": "domain:secure-bankofamerica.com",
+          "type": "domain",
+          "label": "secure-bankofamerica.com",
+          "centrality": 0.0
+        },
+        {
+          "id": "ip:91.215.85.7",
+          "type": "ip",
+          "label": "91.215.85.7",
+          "centrality": 0.0
+        },
+        {
+          "id": "url:a6ca37a1eb",
+          "type": "url",
+          "label": "https://secure-bankofamerica.com/verify-transaction",
+          "centrality": 0.0
+        }
+      ],
+      "top_brokers": [
+        {
+          "id": "alerts@secure-bankofamerica.com",
+          "type": "email_address",
+          "label": "alerts@secure-bankofamerica.com",
+          "centrality": 0.20544309491677898
+        },
+        {
+          "id": "url:0051204d5c",
+          "type": "url",
+          "label": "https://evil-redirect.xyz/chase",
+          "centrality": 0.03207377417903732
+        },
+        {
+          "id": "url:006aabf67e",
+          "type": "url",
+          "label": "https://evil-redirect.xyz/bank",
+          "centrality": 0.02370670265407109
+        }
+      ],
+      "avg_threat_score": 85.0,
+      "domains": [
+        "evil-redirect.xyz",
+        "secure-bankofamerica.com"
+      ],
+      "ips": [
+        "91.215.85.7"
+      ],
+      "risk_level": "critical"
+    },
+    {
+      "community_id": 2,
+      "size": 6,
+      "members": [
+        {
+          "id": "finance@targetcorp.com",
+          "type": "email_address",
+          "label": "finance@targetcorp.com",
+          "centrality": 0.4000899685110211
+        },
+        {
+          "id": "noreply@chase-secure-login.com",
+          "type": "email_address",
+          "label": "noreply@chase-secure-login.com",
+          "centrality": 0.2201979307242466
+        },
+        {
+          "id": "cfo@targetcorp.com",
+          "type": "email_address",
+          "label": "cfo@targetcorp.com",
+          "centrality": 0.056050382366171825
+        },
+        {
+          "id": "domain:chase-secure-login.com",
+          "type": "domain",
+          "label": "chase-secure-login.com",
+          "centrality": 0.0
+        },
+        {
+          "id": "ip:91.215.85.12",
+          "type": "ip",
+          "label": "91.215.85.12",
+          "centrality": 0.0
+        },
+        {
+          "id": "url:a28a4bf121",
+          "type": "url",
+          "label": "https://chase-secure-login.com/unlock",
+          "centrality": 0.0
+        }
+      ],
+      "top_brokers": [
+        {
+          "id": "finance@targetcorp.com",
+          "type": "email_address",
+          "label": "finance@targetcorp.com",
+          "centrality": 0.4000899685110211
+        },
+        {
+          "id": "noreply@chase-secure-login.com",
+          "type": "email_address",
+          "label": "noreply@chase-secure-login.com",
+          "centrality": 0.2201979307242466
+        },
+        {
+          "id": "cfo@targetcorp.com",
+          "type": "email_address",
+          "label": "cfo@targetcorp.com",
+          "centrality": 0.056050382366171825
+        }
+      ],
+      "avg_threat_score": 82.0,
+      "domains": [
+        "chase-secure-login.com"
+      ],
+      "ips": [
+        "91.215.85.12"
+      ],
+      "risk_level": "critical"
+    },
+    {
+      "community_id": 4,
+      "size": 6,
+      "members": [
+        {
+          "id": "it-admin@targetcorp.com",
+          "type": "email_address",
+          "label": "it-admin@targetcorp.com",
+          "centrality": 0.25002249212775524
+        },
+        {
+          "id": "billing@aws.amazon.com",
+          "type": "email_address",
+          "label": "billing@aws.amazon.com",
+          "centrality": 0.19568151147098514
+        },
+        {
+          "id": "url:f254ace68d",
+          "type": "url",
+          "label": "https://console.aws.amazon.com/billing",
+          "centrality": 0.05128205128205128
+        },
+        {
+          "id": "domain:aws.amazon.com",
+          "type": "domain",
+          "label": "aws.amazon.com",
+          "centrality": 0.0
+        },
+        {
+          "id": "ip:54.240.1.1",
+          "type": "ip",
+          "label": "54.240.1.1",
+          "centrality": 0.0
+        },
+        {
+          "id": "domain:console.aws.amazon.com",
+          "type": "domain",
+          "label": "console.aws.amazon.com",
+          "centrality": 0.0
+        }
+      ],
+      "top_brokers": [
+        {
+          "id": "it-admin@targetcorp.com",
+          "type": "email_address",
+          "label": "it-admin@targetcorp.com",
+          "centrality": 0.25002249212775524
+        },
+        {
+          "id": "billing@aws.amazon.com",
+          "type": "email_address",
+          "label": "billing@aws.amazon.com",
+          "centrality": 0.19568151147098514
+        },
+        {
+          "id": "url:f254ace68d",
+          "type": "url",
+          "label": "https://console.aws.amazon.com/billing",
+          "centrality": 0.05128205128205128
+        }
+      ],
+      "avg_threat_score": 3.0,
+      "domains": [
+        "aws.amazon.com",
+        "console.aws.amazon.com"
+      ],
+      "ips": [
+        "54.240.1.1"
+      ],
+      "risk_level": "low"
+    },
+    {
+      "community_id": 0,
+      "size": 5,
+      "members": [
+        {
+          "id": "dev@targetcorp.com",
+          "type": "email_address",
+          "label": "dev@targetcorp.com",
+          "centrality": 0.18893387314439944
+        },
+        {
+          "id": "newsletter@github.com",
+          "type": "email_address",
+          "label": "newsletter@github.com",
+          "centrality": 0.14844804318488528
+        },
+        {
+          "id": "domain:github.com",
+          "type": "domain",
+          "label": "github.com",
+          "centrality": 0.0
+        },
+        {
+          "id": "ip:140.82.112.1",
+          "type": "ip",
+          "label": "140.82.112.1",
+          "centrality": 0.0
+        },
+        {
+          "id": "url:46a3ce25ff",
+          "type": "url",
+          "label": "https://github.com/universe",
+          "centrality": 0.0
+        }
+      ],
+      "top_brokers": [
+        {
+          "id": "dev@targetcorp.com",
+          "type": "email_address",
+          "label": "dev@targetcorp.com",
+          "centrality": 0.18893387314439944
+        },
+        {
+          "id": "newsletter@github.com",
+          "type": "email_address",
+          "label": "newsletter@github.com",
+          "centrality": 0.14844804318488528
+        }
+      ],
+      "avg_threat_score": 5.0,
+      "domains": [
+        "github.com"
+      ],
+      "ips": [
+        "140.82.112.1"
+      ],
+      "risk_level": "low"
+    },
+    {
+      "community_id": 1,
+      "size": 4,
+      "members": [
+        {
+          "id": "domain:targetcorp.com",
+          "type": "domain",
+          "label": "targetcorp.com",
+          "centrality": 0.422672064777328
+        },
+        {
+          "id": "ceo@targetcorp.com",
+          "type": "email_address",
+          "label": "ceo@targetcorp.com",
+          "centrality": 0.030184435447593347
+        },
+        {
+          "id": "cto@targetcorp.com",
+          "type": "email_address",
+          "label": "cto@targetcorp.com",
+          "centrality": 0.020602789023841654
+        },
+        {
+          "id": "hr@targetcorp.com",
+          "type": "email_address",
+          "label": "hr@targetcorp.com",
+          "centrality": 0.019928025191183085
+        }
+      ],
+      "top_brokers": [
+        {
+          "id": "domain:targetcorp.com",
+          "type": "domain",
+          "label": "targetcorp.com",
+          "centrality": 0.422672064777328
+        },
+        {
+          "id": "ceo@targetcorp.com",
+          "type": "email_address",
+          "label": "ceo@targetcorp.com",
+          "centrality": 0.030184435447593347
+        },
+        {
+          "id": "cto@targetcorp.com",
+          "type": "email_address",
+          "label": "cto@targetcorp.com",
+          "centrality": 0.020602789023841654
+        }
+      ],
+      "avg_threat_score": null,
+      "domains": [
+        "targetcorp.com"
+      ],
+      "ips": [],
+      "risk_level": "low"
+    }
+  ],
+  "top_brokers": [
+    {
+      "id": "domain:targetcorp.com",
+      "type": "domain",
+      "label": "targetcorp.com",
+      "centrality": 0.422672,
+      "community": 1,
+      "threat_score": null
+    },
+    {
+      "id": "finance@targetcorp.com",
+      "type": "email_address",
+      "label": "finance@targetcorp.com",
+      "centrality": 0.40009,
+      "community": 2,
+      "threat_score": null
+    },
+    {
+      "id": "it-support@micros0ft-security.com",
+      "type": "email_address",
+      "label": "it-support@micros0ft-security.com",
+      "centrality": 0.284975,
+      "community": 3,
+      "threat_score": 92
+    },
+    {
+      "id": "it-admin@targetcorp.com",
+      "type": "email_address",
+      "label": "it-admin@targetcorp.com",
+      "centrality": 0.250022,
+      "community": 4,
+      "threat_score": null
+    },
+    {
+      "id": "noreply@chase-secure-login.com",
+      "type": "email_address",
+      "label": "noreply@chase-secure-login.com",
+      "centrality": 0.220198,
+      "community": 2,
+      "threat_score": 82
+    },
+    {
+      "id": "security@m1crosoft-alerts.com",
+      "type": "email_address",
+      "label": "security@m1crosoft-alerts.com",
+      "centrality": 0.208547,
+      "community": 3,
+      "threat_score": 95
+    },
+    {
+      "id": "alerts@secure-bankofamerica.com",
+      "type": "email_address",
+      "label": "alerts@secure-bankofamerica.com",
+      "centrality": 0.205443,
+      "community": 5,
+      "threat_score": 85
+    },
+    {
+      "id": "billing@aws.amazon.com",
+      "type": "email_address",
+      "label": "billing@aws.amazon.com",
+      "centrality": 0.195682,
+      "community": 4,
+      "threat_score": 3
+    },
+    {
+      "id": "dev@targetcorp.com",
+      "type": "email_address",
+      "label": "dev@targetcorp.com",
+      "centrality": 0.188934,
+      "community": 0,
+      "threat_score": null
+    },
+    {
+      "id": "newsletter@github.com",
+      "type": "email_address",
+      "label": "newsletter@github.com",
+      "centrality": 0.148448,
+      "community": 0,
+      "threat_score": 5
+    }
+  ],
+  "stats": {
+    "total_nodes": 40,
+    "total_edges": 59,
+    "node_types": {
+      "email_address": 14,
+      "domain": 11,
+      "ip": 5,
+      "url": 10
+    },
+    "edge_types": {
+      "belongs_to": 17,
+      "sent": 10,
+      "originated_from": 7,
+      "contains_url": 11,
+      "url_hosted_on": 11,
+      "same_ip": 3
+    },
+    "num_communities": 6,
+    "high_risk_communities": 3
+  },
+  "generated_at": "2026-09-07T16:25:19.602363+00:00"
+}

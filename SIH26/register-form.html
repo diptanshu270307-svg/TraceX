@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login & Register</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="loginform.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet"
+          href="bootstrap-5.3.8-dist/css/bootstrap-grid.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="../assets/font-awesome-4.7.0/css/font-awesome.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- =========================
+             LOGIN FORM
+        ========================== -->
+
+        <div
+            class="form-box-1 <?= isActiveForm('login', $activeform); ?>"
+            id="login-form"
+        >
+
+            <!-- FIXED: Login submits to login-form.php -->
+            <form action="login-form.php" method="post">
+
+                <h1>Login</h1>
+
+                <?= showerror($errors['login']); ?>
+
+                <!-- Username -->
+                <div class="input-box-1">
+
+                    <input
+                        type="text"
+                        name="username"
+                        id="username-login"
+                        placeholder="Username"
+                        autocomplete="username"
+                        required
+                    >
+
+                    <i
+                        class="fa fa-user"
+                        aria-hidden="true"
+                    ></i>
+
+                </div>
+
+
+                <!-- Password -->
+                <div class="input-box-1">
+
+                    <input
+                        type="password"
+                        name="password"
+                        id="password-login"
+                        placeholder="Password"
+                        autocomplete="current-password"
+                        required
+                    >
+
+                    <i
+                        class="fa fa-lock"
+                        aria-hidden="true"
+                    ></i>
+
+                </div>
+
+
+                <!-- Forgot Password -->
+                <div class="forgot-link-1">
+
+                    <a href="#">
+                        Forgot Password
+                    </a>
+
+                </div>
+
+
+                <!-- Login Button -->
+                <button
+                    type="submit"
+                    name="login"
+                    class="btn-1"
+                >
+                    Login
+                </button>
+
+
+                <!-- Course / Client ID -->
+                <input
+                    type="hidden"
+                    name="cid"
+                    value="<?= $cid; ?>"
+                >
+
+
+                <!-- Social Login -->
+                <p>
+                    Or Login With Social Platform
+                </p>
+
+                <div class="social-icon-1">
+
+                    <a href="#" aria-label="Login with Google">
+                        <i
+                            class="fa fa-google"
+                            aria-hidden="true"
+                        ></i>
+                    </a>
+
+                    <a href="#" aria-label="Login with Facebook">
+                        <i
+                            class="fa fa-facebook"
+                            aria-hidden="true"
+                        ></i>
+                    </a>
+
+                    <a href="#" aria-label="Login with LinkedIn">
+                        <i
+                            class="fa fa-linkedin"
+                            aria-hidden="true"
+                        ></i>
+                    </a>
+
+                    <a href="#" aria-label="Login with GitHub">
+                        <i
+                            class="fa fa-github"
+                            aria-hidden="true"
+                        ></i>
+                    </a>
+
+                </div>
+
+            </form>
+
+        </div>
+
+
+        <!-- =========================
+             REGISTER FORM
+        ========================== -->
+
+        <div
+            class="form-box-2 register"
+            id="register-form"
+        >
+
+            <!-- FIXED: Register submits to register-form.php -->
+            <form action="register-form.php" method="post">
+
+                <h1>Register</h1>
+
+
+                <!-- Username -->
+                <div class="input-box-1">
+
+                    <input
+                        type="text"
+                        name="username"
+                        id="username"
+                        placeholder="Username"
+                        autocomplete="username"
+                        required
+                    >
+
+                    <i
+                        class="fa fa-user"
+                        aria-hidden="true"
+                    ></i>
+
+                </div>
+
+
+                <!-- Email -->
+                <div class="input-box-1">
+
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Email"
+                        autocomplete="email"
+                        required
+                    >
+
+                    <i
+                        class="fa fa-envelope"
+                        aria-hidden="true"
+                    ></i>
+
+                </div>
+
+
+                <!-- Password -->
+                <div class="input-box-1">
+
+                    <input
+                        type="password"
+                        name="password"
+                        id="password1"
+                        placeholder="Password"
+                        autocomplete="new-password"
+                        required
+                    >
+
+                    <i
+                        class="fa fa-lock"
+                        aria-hidden="true"
+                    ></i>
+
+                </div>
+
+
+                <!-- Register Button -->
+                <button
+                    type="submit"
+                    name="register"
+                    class="btn-1"
+                >
+                    Register
+                </button>
+
+
+                <!-- Course / Client ID -->
+                <input
+                    type="hidden"
+                    name="cid"
+                    value="<?= $cid; ?>"
+                >
+
+
+                <!-- Social Register -->
+                <p>
+                    Or Register With Social Platform
+                </p>
+
+                <div class="social-icon-1">
+
+                    <a href="#" aria-label="Register with Google">
+                        <i
+                            class="fa fa-google"
+                            aria-hidden="true"
+                        ></i>
+                    </a>
+
+                    <a href="#" aria-label="Register with Facebook">
+                        <i
+                            class="fa fa-facebook"
+                            aria-hidden="true"
+                        ></i>
+                    </a>
+
+                    <a href="#" aria-label="Register with LinkedIn">
+                        <i
+                            class="fa fa-linkedin"
+                            aria-hidden="true"
+                        ></i>
+                    </a>
+
+                    <a href="#" aria-label="Register with GitHub">
+                        <i
+                            class="fa fa-github"
+                            aria-hidden="true"
+                        ></i>
+                    </a>
+
+                </div>
+
+            </form>
+
+        </div>
+
+
+        <!-- =========================
+             TOGGLE PANEL
+        ========================== -->
+
+        <div class="toggle-box-1">
+
+
+            <!-- LEFT PANEL -->
+            <div class="toggle-panel-1 toggle-left-1">
+
+                <h1>
+                    Hello, Welcome!
+                </h1>
+
+                <p>
+                    Don't Have An Account?
+                </p>
+
+                <button
+                    type="button"
+                    class="btn-1 register-btn-1"
+                >
+                    Register
+                </button>
+
+            </div>
+
+
+            <!-- RIGHT PANEL -->
+            <div class="toggle-panel-1 toggle-right-1">
+
+                <h1>
+                    Welcome Back!
+                </h1>
+
+                <p>
+                    Already Have An Account?
+                </p>
+
+                <button
+                    type="button"
+                    class="btn-1 login-btn-1"
+                >
+                    Login
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="loginform.js"></script>
+
+</body>
+
+</html>
